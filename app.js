@@ -56,11 +56,7 @@ app.get('/posts/:postId', (req, res) => {
 })
 
 app.post('/compose', (req, res) => {
-  // const post = {
-  //   title: req.body.postTitle,
-  //   content: req.body.postBody
-  // }
-  // posts.push(post)
+
   const post = new Post({
     title: req.body.postTitle,
     content: req.body.postBody
